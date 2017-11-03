@@ -1,0 +1,10 @@
+version: '2'
+services:
+  yamato:
+    build: .
+    container_name: yamato
+    volumes:
+    - "../go:/go/src/app"
+    command: go run main.go
+    env_file:
+    - .env.container
