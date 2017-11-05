@@ -44,7 +44,12 @@ func onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		log.Println("Error getting channel: ", err)
 		return
 	}
+
 	fmt.Printf("%20s %20s %20s > %s\n", m.ChannelID, time.Now().Format(time.Stamp), m.Author.Username, m.Content)
+
+	if m.Author.Bot {
+		return
+	}
 
 	switch {
 	case strings.HasPrefix(m.Content, "!echo"):
