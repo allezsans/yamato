@@ -4,7 +4,7 @@ services:
     build: .
     container_name: yamato
     volumes:
-    - "../go:/go/src/app"
+    - "../go:/go/src/github.com/allezsans/yamato/go"
     command: go run main.go
     env_file:
     - .env.container
