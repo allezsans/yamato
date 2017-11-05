@@ -13,7 +13,6 @@ import (
 var (
 	Token             = fmt.Sprintf("Bot %s", os.Getenv("TOKEN"))
 	BotName           = fmt.Sprintf("<@%s>", os.Getenv("CLIENT_ID"))
-	stopBot           = make(chan bool)
 	vcsession         *discordgo.VoiceConnection
 	HelloWorld        = "!helloworld"
 	ChannelVoiceJoin  = "!vcjoin"
