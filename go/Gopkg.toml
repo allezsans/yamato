@@ -22,9 +22,5 @@
 
 
 [[constraint]]
-  branch = "master"
-  name = "github.com/albshin/go-pubg"
-
-[[constraint]]
   name = "github.com/bwmarrin/discordgo"
   version = "0.17.0"

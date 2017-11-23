@@ -2,12 +2,6 @@
 
 
 [[projects]]
-  branch = "master"
-  name = "github.com/albshin/go-pubg"
-  packages = ["."]
-  revision = "a3142ebaee807005a175d129f95842f7f3ca28f0"
-
-[[projects]]
   name = "github.com/bwmarrin/discordgo"
   packages = ["."]
   revision = "2fda7ce223a66a5b70b66987c22c3c94d022ee66"
@@ -28,6 +22,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "2f02e13bce43214e218b87aed530e4b3d59054b523da531599f82e9b2e318839"
+  inputs-digest = "93bb33f2137b28cbe7a26b412b2de8945d8803847dda718499775b08bba59a30"
   solver-name = "gps-cdcl"
   solver-version = 1
