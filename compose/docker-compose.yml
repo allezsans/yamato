@@ -1,7 +1,9 @@
 version: '2'
 services:
   yamato:
-    build: ..
+    build:
+      context:  ..
+      dockerfile: Dockerfile.development
     volumes:
     - "../go:/go/src/github.com/allezsans/yamato/go"
     command: go run main.go

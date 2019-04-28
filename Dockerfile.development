@@ -1,7 +1,5 @@
 FROM golang
 
-MAINTAINER allezsans <allez.sans.question@gmail.com>
-
 WORKDIR ${GOPATH}/src/github.com/allezsans/yamato/go
 
 COPY go/Gopkg.toml Gopkg.toml
